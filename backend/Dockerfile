@@ -5,5 +5,5 @@ COPY backend/package.json ./
 COPY backend/package-lock.json ./
 RUN npm ci
 COPY ./backend .
-EXPOSE 3000
+EXPOSE 3001
 CMD ["npm", "start"]
