@@ -5,7 +5,9 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "test": "newman run GET.postman.json"
+    "test": "newman run GET.postman.json",
+    "lint": "eslint .", 
+	  "lint:fix": "eslint . --fix" 
   },
   "author": "Eilidh M",
   "license": "ISC",
