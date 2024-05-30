@@ -4,11 +4,20 @@
   "description": "food and beverage job review site",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "test": "newman run GET.postman.json",
+    "lint": "eslint .", 
+	  "lint:fix": "eslint . --fix" 
   },
   "author": "Eilidh M",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0",
+    "globals": "^15.3.0",
+    "newman": "^6.1.2"
   }
 }
